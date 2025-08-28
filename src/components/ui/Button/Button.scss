@@ -1,0 +1,27 @@
+@use '/src/styles/helpers/functions' as *;
+
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+
+
+  &-black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  &-header {
+    font-weight: 600;
+    font-size: fluid(16, 12);
+
+    border-radius: var(--border-radius-m);
+    padding-block: fluid(16, 12);
+    padding-inline: fluid(24, 17);
+
+
+  }
+
+
+}
