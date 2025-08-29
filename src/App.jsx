@@ -3,6 +3,7 @@ import './styles/index.js'
 import Footer from "./components/layout/Footer/Footer.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Home from "./pages/Home/Home.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Header/>
 
         <main>
+          <Home />
           {/*<Routes>*/}
           {/*  /!*<Route path="/" element={<HomePage />} />*!/*/}
           {/*</Routes>*/}

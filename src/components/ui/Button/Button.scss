@@ -1,26 +1,42 @@
 @use '/src/styles/helpers/functions' as *;
 
 .button {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  text-transform: uppercase;
-
 
   &-black {
     background-color: var(--color-black);
     color: var(--color-white);
   }
 
+  &-white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
   &-header {
+    font-family: var(--font-family-inter);
     font-weight: 600;
     font-size: fluid(16, 12);
+    text-transform: uppercase;
+    line-height: 150%;
 
     border-radius: var(--border-radius-m);
     padding-block: fluid(16, 12);
     padding-inline: fluid(24, 17);
+  }
 
+  &-hero {
+    font-family: var(--font-family-poppins);
 
+    font-weight: 600;
+    font-size: fluid(16, 11.5);
+    text-transform: uppercase;
+    line-height: 150%;
+
+    //на адаптиве таблета уменьшить до xxs
+    border-radius: var(--border-radius-xs);
+
+    padding-block: fluid(18, 13);
+    padding-inline: fluid(30, 20);
   }
 
 
