@@ -66,7 +66,14 @@ const Hero = () => {
             src='src/assets/images/image1.png'
             alt='Nft Element'
           />
-          {/*градиент*/}
+          <img
+            className="hero__first-gradient"
+            src='src/assets/images/light1.png'
+            alt=''
+          />
+
+
+
           <div className="hero__column-second-list">
             <Button
               className="hero__button-first"
@@ -105,7 +112,12 @@ const Hero = () => {
             alt='Nft Element'
           />
 
-          {/*градиент*/}
+          <img
+            className="hero__second-gradient"
+            src='src/assets/images/light2.png'
+            alt=''
+          />
+
         </div>
 
       </div>

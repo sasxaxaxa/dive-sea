@@ -7,7 +7,7 @@
   padding-top: fluid(66, 46);
   //column-gap: 56px;
   overflow: visible;
-
+padding-bottom: 143px;
   display: grid;
   grid-template-columns: 568px 780px;
   gap: 76px;
@@ -121,6 +121,22 @@
     transform-origin: center;
     margin-left: -15px;
     padding-top: 36px;
+  }
+
+  &__first-gradient {
+    width: 391px;
+    height: auto;
+    margin-top: -347px;
+    filter: blur(84px);
+    border-radius: var(--border-radius-xs);
+  }
+
+  &__second-gradient {
+    width: 315px;
+    height: auto;
+    margin-top: -298px;
+    border-radius: var(--border-radius-xs);
+    filter: blur(68px);
   }
 
   &__ornament {
