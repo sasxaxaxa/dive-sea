@@ -30,15 +30,13 @@ const Hero = () => {
           <Button
             mode='black'
             location='hero'
-          >
-            Explore More
-          </Button>
+            label='Explore More'
+          />
           <Button
-            mode='white'
+            mode='transparent'
             location='hero'
-          >
-            Create NFT
-          </Button>
+            label='Create NFT'
+          />
 
 
         </div>
@@ -71,17 +69,20 @@ const Hero = () => {
           {/*градиент*/}
           <div className="hero__column-second-list">
             <Button
-              mode='white'
-              location='hero'
-            >
-              la
-            </Button>
+              className="hero__button-first"
+              mode='transparent'
+              location='hero-card-left'
+              isLabelHidden={true}
+              iconName='src/assets/icons/button/arrow-left.svg'
+            />
+            <div className="hero__separator"></div>
             <Button
-              mode='white'
-              location='hero'
-            >
-              na
-            </Button>
+              className="hero__button-second"
+              mode='transparent'
+              location='hero-card-right'
+              isLabelHidden={true}
+              iconName='src/assets/icons/button/arrow-right.svg'
+            />
           </div>
         </div>
         <div className="hero__column-right">

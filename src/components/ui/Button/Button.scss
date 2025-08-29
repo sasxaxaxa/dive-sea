@@ -7,9 +7,14 @@
     color: var(--color-white);
   }
 
-  &-white {
-    background-color: var(--color-white);
+  &-transparent {
+    background-color: transparent;
     color: var(--color-black);
+  }
+
+  &-white {
+    background-color: #FCFCFD;
+
   }
 
   &-header {
@@ -37,6 +42,26 @@
 
     padding-block: fluid(18, 13);
     padding-inline: fluid(30, 20);
+  }
+
+  &-hero-card {
+
+    &-left {
+      padding-block: 22px;
+      border: 0;
+      padding-left: 22px;
+      padding-right: 33px;
+    }
+    &-right {
+      padding-block: 22px;
+
+      border: 0;
+
+      padding-right: 22px;
+      padding-left: 33px;
+
+
+    }
   }
 
 

@@ -3,6 +3,7 @@
 
 html, body {
   overflow-x: hidden;
+
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   flex-direction: column;
   font-family: var(--font-family-inter);
   color: var(--color-gray-60);
-  background-color: var(--color-black-08);
+  background-color: var(--color-white);
 }
 
 main {

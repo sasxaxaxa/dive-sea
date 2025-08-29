@@ -42,16 +42,14 @@ const Header = () => {
         <div className="header__actions">
           <Button
             mode='black'
-            location={'header'}
-          >
-            добавить форму поиск
-          </Button>
+            location='header'
+            label='добавить форму поиск'
+          />
           <Button
             mode='black'
-            location={'header'}
-          >
-            Connect Wallet
-          </Button>
+            location='header'
+            label='Connect Wallet'
+          />
         </div>
       </div>
     </header>

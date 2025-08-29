@@ -1,14 +1,16 @@
 @use '/src/styles/helpers/functions' as *;
 
 .hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
   padding-top: fluid(66, 46);
-  column-gap: 56px;
+  //column-gap: 56px;
   overflow: visible;
 
-
+  display: grid;
+  grid-template-columns: 568px 780px;
+  gap: 76px;
 
   &__title {
     position: relative;
@@ -51,7 +53,9 @@
 
   &__list {
     margin-block: fluid(53, 26);
-
+    display: flex;
+    flex-direction: row;
+    column-gap: 65px;
   }
 
   &__column {
@@ -66,39 +70,34 @@
       position: relative;
 
       margin-right: -120px;
-      gap: 24px;
+      gap: 40px;
+
+      &-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #FCFCFD;
+        box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+        border-radius: 17px;
+        margin-top: 47px;
+      }
+
     }
 
     &-right {
       position: relative;
       display: flex;
       flex-direction: column;
-      width: 319px;
     }
 
     &-left {
       position: relative;
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
 
-
-  &__column-right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  &__column-left {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-  }
 
   &__image-first {
     z-index: 1;
@@ -120,15 +119,41 @@
     height: auto;
     transform: rotate(-3deg);
     transform-origin: center;
+    margin-left: -15px;
+    padding-top: 36px;
   }
 
   &__ornament {
     position: absolute;
-    left: 227px;
-    top: 40px;
+    left: 166px;
+    top: -15px;
     width: 173px;
     height: 400px;
     z-index: 0;
   }
+
+  &__separator {
+    width: 2px;
+    height: 26px;
+    background-color: #E6E8EC;
+  }
+
+  &__count {
+    font-family: var(--font-family-public-sans);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--color-black-1);
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #848586;
+  }
+
 
 }
