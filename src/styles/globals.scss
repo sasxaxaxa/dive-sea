@@ -11,7 +11,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  font-family: var(--font-family-inter);
+  font-family: var(--font-family-inter), sans-serif;
   color: var(--color-gray-60);
   background-color: var(--color-white);
 }
@@ -31,7 +31,7 @@ main {
 //
 h1, .h1 {
   @include fluid-text(75, 53);
-  font-family: var(--font-family-poppins);
+  font-family: var(--font-family-poppins), sans-serif;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.04em;

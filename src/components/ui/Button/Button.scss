@@ -18,7 +18,7 @@
   }
 
   &-header {
-    font-family: var(--font-family-inter);
+    font-family: var(--font-family-inter), sans-serif;
     font-weight: 600;
     font-size: fluid(16, 12);
     text-transform: uppercase;
@@ -30,7 +30,7 @@
   }
 
   &-hero {
-    font-family: var(--font-family-poppins);
+    font-family: var(--font-family-poppins), sans-serif;
 
     font-weight: 600;
     font-size: fluid(16, 11.5);
