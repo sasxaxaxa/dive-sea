@@ -9,6 +9,7 @@
   overflow: visible;
 
 
+
   &__title {
     position: relative;
     padding-top: fluid(10, 7);
@@ -59,39 +60,75 @@
     }
 
     &-second {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       width: 780px;
       position: relative;
-      overflow: visible;
 
-      //column-gap: fluid(56, 21);
+      margin-right: -120px;
+      gap: 24px;
+    }
 
+    &-right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 319px;
+    }
+
+    &-left {
+      position: relative;
+      display: flex;
+      flex-direction: column;
     }
   }
 
+
+  &__column-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__column-left {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
   &__image-first {
-    position: absolute;
-    top: 0;
-    max-width: 391px;
-    max-height: 394px;
+    z-index: 1;
+    width: fluid(391, 278);
+    height: auto;
     aspect-ratio: 1;
   }
 
   &__image-second {
-    position: absolute;
-    right: -28px;
-    top: 180px;
-    max-width: 319px;
-    max-height: 322px;
+    z-index: 2;
+    position: relative;
+    width: fluid(319, 227);
+    height: auto;
     aspect-ratio: 1;
   }
 
-  &__column-right {
-
+  &__image-arrow {
+    width: 129px;
+    height: auto;
+    transform: rotate(-3deg);
+    transform-origin: center;
   }
 
-  &__column-left {
-
+  &__ornament {
+    position: absolute;
+    left: 227px;
+    top: 40px;
+    width: 173px;
+    height: 400px;
+    z-index: 0;
   }
+
 }

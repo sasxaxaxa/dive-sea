@@ -69,21 +69,34 @@ const Hero = () => {
             alt='Nft Element'
           />
           {/*градиент*/}
-
-          <Button
-            mode='white'
-            location='hero'
-          >
-            lala
-          </Button>
-          <Button
-            mode='white'
-            location='hero'
-          >
-            nana
-          </Button>
+          <div className="hero__column-second-list">
+            <Button
+              mode='white'
+              location='hero'
+            >
+              la
+            </Button>
+            <Button
+              mode='white'
+              location='hero'
+            >
+              na
+            </Button>
+          </div>
         </div>
         <div className="hero__column-right">
+
+          <img
+            className="hero__image-arrow"
+            src='src/assets/arrow.svg'
+            alt=''
+          />
+
+          <img
+            className="hero__ornament"
+            src='src/assets/ornament.svg'
+            alt=''
+          />
 
           <img
             className="hero__image-second"
