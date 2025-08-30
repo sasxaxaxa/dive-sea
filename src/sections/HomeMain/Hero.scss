@@ -7,7 +7,7 @@
   padding-top: fluid(66, 46);
   //column-gap: 56px;
   overflow: visible;
-padding-bottom: 143px;
+  padding-bottom: 143px;
   display: grid;
   grid-template-columns: 568px 780px;
   gap: 76px;
@@ -71,17 +71,6 @@ padding-bottom: 143px;
 
       margin-right: -120px;
       gap: 40px;
-
-      &-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: #FCFCFD;
-        box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
-        border-radius: 17px;
-        margin-top: 47px;
-      }
-
     }
 
     &-right {
@@ -171,5 +160,8 @@ padding-bottom: 143px;
     color: #848586;
   }
 
+  &__slider {
+    margin-top: 47px;
+  }
 
 }

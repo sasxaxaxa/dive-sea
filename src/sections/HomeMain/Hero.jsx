@@ -1,5 +1,6 @@
 import './Hero.scss'
 import Button from "../../components/ui/Button/Button.jsx";
+import Slider from "../../components/ui/Slider/Slider.jsx";
 
 const mainInfo = [
   {
@@ -60,7 +61,6 @@ const Hero = () => {
       </div>
       <div className="hero__column-second">
         <div className="hero__column-left">
-
           <img
             className="hero__image-first"
             src='src/assets/images/image1.png'
@@ -71,57 +71,33 @@ const Hero = () => {
             src='src/assets/images/light1.png'
             alt=''
           />
-
-
-
-          <div className="hero__column-second-list">
-            <Button
-              className="hero__button-first"
-              mode='transparent'
-              location='hero-card-left'
-              isLabelHidden={true}
-              iconName='src/assets/icons/button/arrow-left.svg'
-            />
-            <div className="hero__separator"></div>
-            <Button
-              className="hero__button-second"
-              mode='transparent'
-              location='hero-card-right'
-              isLabelHidden={true}
-              iconName='src/assets/icons/button/arrow-right.svg'
-            />
+          <div className="hero__slider">
+            <Slider />
           </div>
         </div>
         <div className="hero__column-right">
-
           <img
             className="hero__image-arrow"
             src='src/assets/arrow.svg'
             alt=''
           />
-
           <img
             className="hero__ornament"
             src='src/assets/ornament.svg'
             alt=''
           />
-
           <img
             className="hero__image-second"
             src='src/assets/images/image2.png'
             alt='Nft Element'
           />
-
           <img
             className="hero__second-gradient"
             src='src/assets/images/light2.png'
             alt=''
           />
-
         </div>
-
       </div>
-
     </div>
   )
 }

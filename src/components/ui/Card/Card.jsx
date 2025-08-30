@@ -51,16 +51,6 @@ const Card = (props) => {
       setSeconds((prev) => (prev > 0 ? prev - 1 : 0));
     }, 1000);
 
-    // const interval = setInterval(() => {
-    //   setSeconds((prev) => {
-    //     if (prev <= 1) {
-    //       clearInterval(interval)
-    //       return 0
-    //     }
-    //     return prev - 1
-    //   })
-    // }, 1000)
-
     return () => {
       clearInterval(interval)
     }
@@ -91,7 +81,6 @@ const Card = (props) => {
             <p className="card__bid-current">
               Current bid
             </p>
-
             <div className="card__bid-item">
               <img
                 className="card__bid-image"
@@ -110,9 +99,7 @@ const Card = (props) => {
               label='Place bid'
               mode='black'
             />
-
           </div>
-
         </div>
       </div>
     </div>
