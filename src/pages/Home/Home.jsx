@@ -1,33 +1,16 @@
 import './Home.scss'
 import Hero from "../../sections/HomeMain/Hero.jsx"
-import Card from "../../components/ui/Card/Card.jsx"
-import { CardsProvider, useCards } from "../../context/CardsContext.jsx"
+import Weekly from "../../sections/Weekly/Weekly.jsx";
+import Table from "../../components/ui/Tables/Table.jsx";
 
-const HomeContent = () => {
-  const { cards, removeCard } = useCards();
+const Home = () => {
 
   return (
     <div>
       <Hero />
-
-      <div className="test">
-        {cards.map((card) => (
-          <Card
-            key={card.id}
-            {...card}
-            onTimerEnd={() => removeCard(card.id)}
-          />
-        ))}
-      </div>
+      <Weekly />
+      <Table />
     </div>
-  );
-};
-
-const Home = () => {
-  return (
-    <CardsProvider>
-      <HomeContent />
-    </CardsProvider>
   );
 };
 

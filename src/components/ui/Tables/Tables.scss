@@ -1,0 +1,32 @@
+.table {
+
+  &__inner {
+    font-family: var(--font-family-poppins);
+    display: grid;
+    grid-template-columns: 370px 1fr 1fr 1fr 1fr 1fr;;
+    text-align: center;
+    column-gap: 40px;
+  }
+
+  &__inner thead,
+  &__inner tbody,
+  &__inner tr {
+    display: contents;
+  }
+
+  all: unset;
+
+  &__header {
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #93989a;
+  }
+
+
+}
+
+.table__inner td:nth-child(1),
+.table__inner th:nth-child(1) {
+  margin-right: auto;
+}
