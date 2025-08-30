@@ -5,7 +5,7 @@
     background-color: #fff;
     border-radius: 23px;
     width: 281px;
-    height: 402px;
+    height: auto;
   }
 
 
@@ -16,7 +16,7 @@
     line-height: 140%;
     color: var(--color-black-1);
     padding-bottom: 14px;
-    //margin-bottom: 14px;
+    padding-top: 4px;
   }
 
   &__preview {
@@ -76,6 +76,7 @@
 
   &__bid {
     &-current {
+      font-family: var(--font-family-poppins);
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
@@ -95,6 +96,7 @@
     &-item {
       display: flex;
       flex-direction: row;
+      padding-top: 8px;
     }
 
     &-image {

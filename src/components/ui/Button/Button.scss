@@ -1,10 +1,17 @@
 @use '/src/styles/helpers/functions' as *;
+@use '/src/styles/helpers/media' as *;
+@use '/src/styles/helpers/mixins' as *;
+
 
 .button {
-  //mods
   &-black {
     background-color: var(--color-black);
     color: var(--color-white);
+  }
+
+  &-transparent.button-hero {
+    padding-block: fluid(18, 13);
+    padding-inline: fluid(21, 15);
   }
 
   &-transparent {
@@ -21,13 +28,35 @@
   &-header {
     font-family: var(--font-family-inter), sans-serif;
     font-weight: 600;
-    font-size: fluid(16, 12);
     text-transform: uppercase;
     line-height: 150%;
 
     border-radius: var(--border-radius-m);
-    padding-block: fluid(16, 12);
-    padding-inline: fluid(24, 17);
+    padding-block: fluid-to-laptop(20, 16);
+    padding-inline: fluid-to-laptop(28, 22);
+
+
+    @include laptop-above {
+      font-size: 16px;
+    }
+
+    @include laptop {
+      @include fluid-text(16, 11);
+      padding-block: fluid-to-laptop(16, 14);
+      padding-inline: fluid-to-laptop(24, 17);
+    };
+
+    @include tablet {
+      font-size: 11px;
+      padding-block: fluid-to-laptop(11, 9);
+      padding-inline: fluid-to-laptop(17, 13);
+      border-radius: var(--border-radius-xs);
+
+
+
+    };
+
+
   }
 
   &-hero {
@@ -53,6 +82,7 @@
       padding-left: 22px;
       padding-right: 33px;
     }
+
     &-right {
       padding-block: 22px;
 
@@ -65,9 +95,9 @@
     }
   }
 
-  &-card{
+  &-card {
     border-radius: 12px;
-    padding: 9px 18px;
+    padding: 15px 23px;
     font-family: var(--font-family-poppins);
     font-weight: 600;
     font-size: 14px;

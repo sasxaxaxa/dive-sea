@@ -1,6 +1,6 @@
 @use './helpers/mixins' as *;
 @use './helpers/media' as *;
-
+@use './helpers/functions' as *;
 html, body {
   overflow-x: hidden;
 
@@ -19,6 +19,7 @@ body {
 main {
   flex-grow: 1;
 }
+
 //
 //h1, .h1,
 //h2, .h2,
@@ -30,7 +31,21 @@ main {
 //}
 //
 h1, .h1 {
-  @include fluid-text(75, 53);
+
+  @include fluid-text(85, 75);
+
+  @include laptop {
+    @include fluid-text(75, 53);
+  }
+
+  @include tablet {
+    @include fluid-text(53, 47);
+  }
+
+  @include mobile {
+    font-size: 47px;
+  }
+
   font-family: var(--font-family-poppins), sans-serif;
   font-weight: 600;
   line-height: 120%;
@@ -39,6 +54,7 @@ h1, .h1 {
   color: var(--color-black-1);
 
 }
+
 //
 //h2, .h2 {
 //  @include fluid-text(48, 24);
