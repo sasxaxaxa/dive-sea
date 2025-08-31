@@ -21,6 +21,21 @@
 
   &-white {
     background-color: #FCFCFD;
+  }
+
+  &-gray {
+    font-family: var(--font-family-poppins);
+    background-color: transparent;
+    color: #ACADB9;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 226%;
+    letter-spacing: -0.01em;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 17px;
 
   }
 
@@ -51,12 +66,7 @@
       padding-block: fluid-to-laptop(11, 9);
       padding-inline: fluid-to-laptop(17, 13);
       border-radius: var(--border-radius-xs);
-
-
-
     };
-
-
   }
 
   &-hero {
@@ -87,8 +97,6 @@
       border: 0;
       padding-right: 22px;
       padding-left: 33px;
-
-
     }
   }
 
@@ -102,8 +110,26 @@
     letter-spacing: 0.01em;
     color: #fff;
     text-transform: uppercase;
-
   }
 
+  &-explore,
+  &-explore-all {
+    font-family: var(--font-family-manrope);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #1a202c;
 
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border: 2.2px solid var(--color-black-1);
+    border-radius: var(--border-radius-s);
+    column-gap: 8px;
+  }
+
+  &-explore-all {
+    padding-inline: 26px;
+  }
 }

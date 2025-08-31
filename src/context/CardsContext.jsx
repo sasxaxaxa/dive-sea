@@ -39,6 +39,27 @@ export const CardsProvider = ({ children }) => {
       time: "07:09:12",
       bid: "1.25",
     },
+    {
+      id: 6,
+      title: "Sun-Glass",
+      preview: "src/assets/images/cards/sun-glass-1.png",
+      time: "07:09:12",
+      bid: "1.75",
+    },
+    {
+      id: 7,
+      title: "Sun-Glass",
+      preview: "src/assets/images/cards/sun-glass-2.png",
+      time: "07:09:12",
+      bid: "1.75",
+    },
+    {
+      id: 8,
+      title: "Sun-Glass",
+      preview: "src/assets/images/cards/sun-glass-3.png",
+      time: "07:09:12",
+      bid: "1.75",
+    },
   ]);
 
   const removeCard = (id) => {

@@ -1,0 +1,22 @@
+.top-collection {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 236px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 99%;
+    color: #141416;
+  }
+
+}
+
+.top-collection__button {
+  align-self: flex-end;
+}

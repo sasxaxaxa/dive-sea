@@ -1,0 +1,36 @@
+.unleash {
+  border-top: red;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-family: var(--font-family-poppins);
+
+  &__title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 121%;
+    text-transform: capitalize;
+    color: #18181B;
+
+    &-gray {
+      color: #c5c5c5;
+    }
+  }
+
+  &__list {
+    margin-top: 45px;
+    margin-bottom: 58px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #12141d;
+    margin-bottom: 12px;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+  }
+
+}

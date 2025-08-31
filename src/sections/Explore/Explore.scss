@@ -1,0 +1,29 @@
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 100px;
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 22px;
+  }
+
+  &__title {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60%;
+    color: var(--color-black-1);
+    margin-bottom: 65px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 68px;
+    padding-block: 100px;
+  }
+}

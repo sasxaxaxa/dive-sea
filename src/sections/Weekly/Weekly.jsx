@@ -2,6 +2,7 @@ import Card from "../../components/ui/Card/Card.jsx";
 import { useCards, CardsProvider } from "../../context/CardsContext.jsx";
 import './Weekly.scss'
 import Slider from "../../components/ui/Slider/Slider.jsx";
+
 const WeeklyContent = () => {
   const { cards, removeCard } = useCards();
 
@@ -21,7 +22,6 @@ const WeeklyContent = () => {
             />
           ))}
         </div>
-
         <Slider />
       </div>
     </section>

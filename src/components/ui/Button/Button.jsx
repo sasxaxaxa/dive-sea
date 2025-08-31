@@ -40,7 +40,6 @@ const Button = (props) => {
 
 Button.propTypes = {
   label: PropTypes.string,
-  mode: PropTypes.oneOf(['black', 'white']),
   location: PropTypes.string,
   // hasFillIcon: PropTypes.bool,
   isLabelHidden: PropTypes.bool,
