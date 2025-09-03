@@ -5,6 +5,7 @@
 
 .button {
   &-black {
+    border: none;
     background-color: var(--color-black);
     color: var(--color-white);
   }
@@ -131,5 +132,18 @@
 
   &-explore-all {
     padding-inline: 26px;
+  }
+
+  &-explore-unleash {
+    font-family: var(--font-family-poppins);
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    column-gap: 11px;
+    padding-block: 20px;
+    padding-left: 21px;
+    padding-right: 15px;
+    border-radius: var(--border-radius-xs);
   }
 }

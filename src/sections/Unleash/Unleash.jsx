@@ -38,7 +38,10 @@ const Unleash = () => {
         </ul>
         <Button
           mode='black'
-          label='Explore'
+          label='Explore More'
+          location='explore-unleash'
+          iconName='src/assets/arrow-white.svg'
+          iconPosition='after'
         />
       </div>
 

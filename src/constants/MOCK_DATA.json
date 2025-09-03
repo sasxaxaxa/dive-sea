@@ -1,25 +1,31 @@
 [
   {
     "id": 1,
-    "collection": "Alex Ca.",
+    "name": "Alex Ca.",
+    "userName": "Alexy",
+    "photo": "src/assets/images/profiles/photo1.png",
     "volume": "8,456",
-    "percentage": "+ 27.78%",
+    "percentage": "+27.78%",
     "floor-price": "3,5",
     "owner": "2.2K",
     "item": "500"
   },
   {
     "id": 2,
-    "collection": "Alex Ca.",
-    "volume": "8,456",
-    "percentage": "+ 27.78%",
+    "name": "Juliya S.",
+    "userName": "JuliyaS",
+    "photo": "src/assets/images/profiles/photo1.png",
+    "volume": "5,327",
+    "percentage": "-32,01%",
     "floor-price": "3,5",
     "owner": "2.2K",
     "item": "500"
   },
   {
     "id": 3,
-    "collection": "Alex Ca.",
+    "name": "Alex Ca.",
+    "userName": "Alexy",
+    "photo": "src/assets/images/profiles/photo1.png",
     "volume": "8,456",
     "percentage": "+ 27.78%",
     "floor-price": "3,5",
@@ -28,7 +34,9 @@
   },
   {
     "id": 4,
-    "collection": "Alex Ca.",
+    "name": "Alex Ca.",
+    "userName": "Alexy",
+    "photo": "src/assets/images/profiles/photo1.png",
     "volume": "8,456",
     "percentage": "+ 27.78%",
     "floor-price": "3,5",

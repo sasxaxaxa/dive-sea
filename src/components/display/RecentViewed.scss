@@ -1,12 +1,26 @@
 .recent-viewed {
   display: flex;
   flex-direction: column;
+  padding-bottom: 19px;
+  padding-inline: 22px;
+  padding-top: 23px;
+  column-gap: 17px;
+
 
   &__title {
-
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #1a202c;
   }
 
   &__content {
 
+  }
+
+  &__profile-mini {
+    padding-block: 10px;
   }
 }

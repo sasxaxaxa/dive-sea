@@ -41,10 +41,10 @@ const Button = (props) => {
 Button.propTypes = {
   label: PropTypes.string,
   location: PropTypes.string,
-  // hasFillIcon: PropTypes.bool,
   isLabelHidden: PropTypes.bool,
   iconPosition: PropTypes.oneOf(['before', 'after']),
   iconName: PropTypes.string,
+  mode: PropTypes.string,
 
 }
 

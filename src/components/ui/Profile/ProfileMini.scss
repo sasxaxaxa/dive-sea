@@ -1,0 +1,57 @@
+.profile-mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 277px;
+  padding-block: 6px;
+
+  &__first {
+    margin-right: 14px;
+  }
+
+  &__second {
+    margin-right: 107px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    aspect-ratio: 1;
+  }
+
+  &__title {
+    font-family: var(--font-family-poppins);
+    text-wrap: nowrap;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--color-black-1);
+    padding-bottom: 7px;
+  }
+
+  &__description {
+    font-family: var(--font-family-poppins);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #64748b;
+  }
+
+  &__volume {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--color-black-1);
+    padding-bottom: 7px;
+  }
+
+  &__percentage {
+    font-family: var(--font-family-poppins);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #10c352;
+  }
+
+}
