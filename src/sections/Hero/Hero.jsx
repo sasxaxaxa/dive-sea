@@ -25,7 +25,7 @@ const Hero = () => {
           Discover And Create NFTs
         </h1>
         <p className="hero__description">
-          Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a <span className="hero__description-accent">$20 bonus</span>.
+          Discover, Create and Sell NFTs On Our NFT Marketplace<br/>With Over Thousands Of NFTs And Get a <span className="hero__description-accent">$20 bonus</span>.
         </p>
         <div className="hero__button-list">
           <Button

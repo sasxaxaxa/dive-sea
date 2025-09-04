@@ -1,21 +1,22 @@
-@use '/src/styles/helpers/functions' as *;
-
 .hero {
-  //display: flex;
-  //flex-direction: row;
-  //justify-content: space-between;
-  padding-top: fluid(66, 46);
-  //column-gap: 56px;
+  padding-top: 66px;
   overflow: visible;
-  padding-bottom: 143px;
+  padding-bottom: 129px;
   display: grid;
   grid-template-columns: 568px 780px;
   gap: 76px;
 
   &__title {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+
+    text-transform: capitalize;
+    color: var(--color-black-1);
     position: relative;
-    padding-top: fluid(10, 7);
-    padding-right: fluid(66, 46);
+    padding-top: 10px;
 
     &::before {
       content: "";
@@ -30,10 +31,10 @@
   }
 
   &__description {
-    padding-right: fluid(80, 47);
-    margin-block: fluid(16, 11);
+    margin-block: 16px;
     font-weight: 400;
-    font-size: fluid(18, 13);
+    font-size: 18px;
+    width: 100%;
     line-height: 156%;
     text-align: justify;
     color: var(--color-gray-9);
@@ -47,15 +48,15 @@
   &__button-list {
     display: flex;
     flex-direction: row;
-    column-gap: fluid(23, 17);
-    margin-block: fluid(29, 20);
+    column-gap: 23px;
+    margin-block: 45px;
   }
 
   &__list {
-    margin-block: fluid(53, 26);
+    padding-block: 36px;
     display: flex;
     flex-direction: row;
-    column-gap: 65px;
+    column-gap: 70px;
   }
 
   &__column {
@@ -87,10 +88,9 @@
     }
   }
 
-
   &__image-first {
     z-index: 1;
-    width: fluid(391, 278);
+    width: 391px;
     height: auto;
     aspect-ratio: 1;
   }
@@ -98,7 +98,7 @@
   &__image-second {
     z-index: 2;
     position: relative;
-    width: fluid(319, 227);
+    width: 319px;
     height: auto;
     aspect-ratio: 1;
   }
@@ -150,18 +150,18 @@
     line-height: 125%;
     text-align: center;
     color: var(--color-black-1);
+    padding-bottom: 6px;
   }
 
   &__label {
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
-    text-align: center;
+    text-align: start;
     color: #848586;
   }
 
   &__slider {
     margin-top: 47px;
   }
-
 }

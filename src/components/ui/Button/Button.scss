@@ -1,8 +1,3 @@
-@use '/src/styles/helpers/functions' as *;
-@use '/src/styles/helpers/media' as *;
-@use '/src/styles/helpers/mixins' as *;
-
-
 .button {
   &-black {
     border: none;
@@ -11,13 +6,15 @@
   }
 
   &-transparent.button-hero {
-    padding-block: fluid(18, 13);
-    padding-inline: fluid(21, 15);
+    padding-block: 18px;
+    padding-inline: 21px;
   }
 
   &-transparent {
     background-color: transparent;
     color: var(--color-black);
+    border: 1.50px solid #000;
+
   }
 
   &-white {
@@ -48,41 +45,23 @@
     line-height: 150%;
 
     border-radius: var(--border-radius-m);
-    padding-block: fluid-to-laptop(20, 16);
-    padding-inline: fluid-to-laptop(28, 22);
-
-
-    @include laptop-above {
-      font-size: 16px;
-    }
-
-    @include laptop {
-      @include fluid-text(16, 11);
-      padding-block: fluid-to-laptop(16, 14);
-      padding-inline: fluid-to-laptop(24, 17);
-    };
-
-    @include tablet {
-      font-size: 11px;
-      padding-block: fluid-to-laptop(11, 9);
-      padding-inline: fluid-to-laptop(17, 13);
-      border-radius: var(--border-radius-xs);
-    };
+    padding-block: 20px;
+    padding-inline: 28px;
   }
 
   &-hero {
     font-family: var(--font-family-poppins), sans-serif;
 
     font-weight: 600;
-    font-size: fluid(16, 11.5);
+    font-size: 16px;
     text-transform: uppercase;
     line-height: 150%;
 
     //на адаптиве таблета уменьшить до xxs
     border-radius: var(--border-radius-xs);
 
-    padding-block: fluid(18, 13);
-    padding-inline: fluid(30, 20);
+    padding-block: 18px;
+    padding-inline: 30px;
   }
 
   &-slider {

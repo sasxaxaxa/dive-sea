@@ -1,10 +1,5 @@
-@use '/src/styles/helpers/functions' as *;
-@use '/src/styles/helpers/media' as *;
-@use '/src/styles/helpers/mixins' as *;
-
 .header {
   width: 100%;
-
 
   &__inner {
     display: flex;
@@ -12,13 +7,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-block: 45px;
-    column-gap: fluid(57, 40);
-
-
-    @include tablet {
-      padding-block: 32px;
-    }
-
+    column-gap: 57px;
   }
 
   &__menu {
@@ -26,16 +15,7 @@
       display: flex;
       flex-direction: row;
       column-gap: 65px;
-
-      @include laptop {
-        column-gap: 38px;
-      }
-
-      @include tablet {
-        column-gap: 38px;
-      }
-
-
+      color: var(--color-gray-6);
     }
 
     &-link {
@@ -43,27 +23,16 @@
       font-size: 18px;
       line-height: 150%;
       text-transform: uppercase;
-      color: var(--color-gray-6);
-
-      @include laptop {
-        @include fluid-text(16, 12);
-      }
-
-      @include tablet {
-        @include fluid-text(12, 10);
-      }
     }
   }
 
   &__actions {
     margin-left: auto;
     display: flex;
-    gap: fluid(30, 20);
+    gap: 30px;
   }
 
   &.is-fixed {
     position: fixed;
   }
-
-
 }
