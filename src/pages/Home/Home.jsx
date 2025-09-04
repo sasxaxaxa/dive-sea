@@ -12,6 +12,9 @@ const Home = () => {
     <div>
       <Hero />
       <Weekly />
+      <RecentViewed
+        position="first"
+      />
       <TopCollection />
       <Explore />
       <Unleash />

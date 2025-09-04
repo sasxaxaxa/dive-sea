@@ -14,7 +14,7 @@
     "id": 2,
     "name": "Juliya S.",
     "userName": "JuliyaS",
-    "photo": "src/assets/images/profiles/photo1.png",
+    "photo": "src/assets/images/profiles/photo2.png",
     "volume": "5,327",
     "percentage": "-32,01%",
     "floor-price": "3,5",
@@ -27,7 +27,7 @@
     "userName": "Alexy",
     "photo": "src/assets/images/profiles/photo1.png",
     "volume": "8,456",
-    "percentage": "+ 27.78%",
+    "percentage": "+27.78%",
     "floor-price": "3,5",
     "owner": "2.2K",
     "item": "500"
@@ -38,7 +38,7 @@
     "userName": "Alexy",
     "photo": "src/assets/images/profiles/photo1.png",
     "volume": "8,456",
-    "percentage": "+ 27.78%",
+    "percentage": "+27.78%",
     "floor-price": "3,5",
     "owner": "2.2K",
     "item": "500"

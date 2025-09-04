@@ -1,6 +1,5 @@
-.test {
-  background-color: var(--color-gray);
-  display: flex;
-  justify-content: center;
-  padding: 75px;
+.recent-viewed {
+  &__first {
+    margin-top: -116px;
+  }
 }

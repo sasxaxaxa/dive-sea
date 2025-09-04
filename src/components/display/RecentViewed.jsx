@@ -1,26 +1,45 @@
 import './RecentViewed.scss'
 import MOCK_DATA from '../../constants/MOCK_DATA.json'
 import ProfileMini from "../ui/Profile/ProfileMini.jsx";
+import classnames from "classnames";
+import PropTypes from "prop-types";
 
-const RecentViewed = () => {
+const RecentViewed = (props) => {
+
+  const {
+    position = ''
+  } = props
+
   return (
-    <div className="recent-viewed">
+    <div className={
+      classnames(
+        'recent-viewed',
+        `recent-viewed-${position}`
+      )}>
       <h3 className="recent-viewed__title">
         Recent Viewed
       </h3>
-      {MOCK_DATA.slice(0, 2).map((row, index) =>
-        <ProfileMini
-          key={index}
-          className="recent-viewed__profile-mini"
-          name={row.name}
-          userName={row.userName}
-          photo={row.photo}
-          volume={row.volume}
-          percentage={row.percentage}
-        />
-      )}
+      <ul className="recent-viewed__list">
+        {MOCK_DATA.slice(0, 2).map((row, index) =>
+          <li key={index} className="recent-viewed__item">
+            <ProfileMini
+              key={index}
+              name={row.name}
+              userName={row.userName}
+              photo={row.photo}
+              volume={row.volume}
+              percentage={row.percentage}
+              location='recent-viewed'
+            />
+          </li>
+        )}
+      </ul>
     </div>
   )
+}
+
+RecentViewed.propTypes = {
+  position: PropTypes.string,
 }
 
 export default RecentViewed
