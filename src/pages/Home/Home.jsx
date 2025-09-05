@@ -5,6 +5,7 @@ import TopCollection from "../../sections/TopCollection/TopCollection.jsx";
 import Explore from "../../sections/Explore/Explore.jsx";
 import Unleash from "../../sections/Unleash/Unleash.jsx";
 import RecentViewed from "../../components/display/RecentViewed.jsx";
+import Banner from "../../sections/Banner/Banner.jsx";
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ const Home = () => {
       <TopCollection />
       <Explore />
       <Unleash />
+      <Banner />
     </div>
   );
 };

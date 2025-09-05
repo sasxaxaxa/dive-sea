@@ -4,6 +4,15 @@
     background-color: var(--color-black);
     color: var(--color-white);
   }
+  &-transparent-border.button-banner{
+    padding-inline: 30px;
+  }
+
+  &-transparent-border {
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: var(--color-white);
+  }
 
   &-transparent.button-hero {
     padding-block: 18px;
@@ -14,7 +23,6 @@
     background-color: transparent;
     color: var(--color-black);
     border: 1.50px solid #000;
-
   }
 
   &-white {
@@ -147,5 +155,16 @@
     line-height: 114%;
     text-align: center;
     color: #23262f;
+  }
+
+  &-banner {
+    padding-block: 20px;
+    font-family: var(--font-family-outfit);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    border-radius: 12px;
+    padding-inline: 26px;
   }
 }

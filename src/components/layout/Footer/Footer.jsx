@@ -45,45 +45,48 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="footer container">
-      <div className="footer__row-first">
-        <Logo
-          mode='white'
-          className="footer__logo"
-        />
-        <p className="footer__logo-name">DiveSea</p>
-        <ul className="footer__menu-list">
-          {footerItems.map(({label, href}, index) => (
-            <li
-              key={index}>
-              <a className="footer__menu-link" href={href}>
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="footer__row-second">
-        <p className="footer__copyright">
-          © 2023 EATLY All Rights Reserved.
-        </p>
-        <ul className="footer__social-list">
-          {socials.map(({label, iconName, href}, index) => (
-            <li
-              key={index}
-              className={"footer__social-item"}
-            >
-              <a
-                className="footer__social-link"
-                href={href}
-                aria-label={label}
+    <footer className="footer">
+      <div className="footer__inner container">
+        <div className="footer__row-first">
+          <Logo
+            mode='white'
+            className="footer__logo"
+          />
+          <p className="footer__logo-name">DiveSea</p>
+          <ul className="footer__menu-list">
+            {footerItems.map(({label, href}, index) => (
+              <li
+                key={index}>
+                <a className="footer__menu-link" href={href}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="footer__row-second">
+          <p className="footer__copyright">
+            © 2023 EATLY All Rights Reserved.
+          </p>
+          <ul className="footer__social-list">
+            {socials.map(({label, iconName, href}, index) => (
+              <li
+                key={index}
+                className={"footer__social-item"}
               >
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+                <a
+                  className="footer__social-link"
+                  href={href}
+                  aria-label={label}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+
     </footer>
   )
 }

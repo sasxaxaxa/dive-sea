@@ -1,0 +1,58 @@
+.banner {
+  margin-bottom: 160px;
+  margin-top: 180px;
+
+  &__inner {
+    background-color: var(--color-black-1);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__first {
+    padding-left: 66px;
+    padding-top:44px;
+  }
+
+  &__second {
+    margin-left: auto;
+    padding: 31px;
+  }
+
+  &__buttons {
+    padding-block: 51px;
+    display: flex;
+    gap: 31px;
+  }
+
+  &__title {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+    padding-bottom: 12px;
+  }
+
+  &__description {
+    font-family: var(--font-family-poppins);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #d4d4d4;
+    opacity: 0.6;
+  }
+
+  &__image {
+    &-container {
+      position: relative;
+      display: inline-block;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  }
+}
