@@ -18,7 +18,6 @@ const Home = () => {
       <TopCollection />
       <Explore />
       <Unleash />
-      <RecentViewed />
     </div>
   );
 };

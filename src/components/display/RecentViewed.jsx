@@ -5,7 +5,6 @@ import classnames from "classnames";
 import PropTypes from "prop-types";
 
 const RecentViewed = (props) => {
-
   const {
     position = ''
   } = props

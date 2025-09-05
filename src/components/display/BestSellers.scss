@@ -1,0 +1,33 @@
+.best-sellers {
+  max-width: 322px;
+  max-height: 510px;
+  box-shadow: 9px 9px 44px 0 rgba(20, 20, 22, 0.1);
+  background: #FFFFFF;
+
+  border-radius: 14px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #1a202c;
+
+    padding-left: 21px;
+    padding-top: 26px;
+  }
+
+  &__list {
+    padding: 24px 20px 26px 17px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+}

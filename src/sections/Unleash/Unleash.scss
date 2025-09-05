@@ -1,12 +1,19 @@
 .unleash {
-  border-top: red;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  font-family: var(--font-family-poppins);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 461px 682px;
+    font-family: var(--font-family-poppins);
+    text-wrap: nowrap;
+    gap: 102px;
+
+    border-top: 1px solid #CBCBCB;
+  }
 
   &__title {
     font-weight: 600;
     font-size: 45px;
+    padding-top: 116px;
     line-height: 121%;
     text-transform: capitalize;
     color: #18181B;
@@ -32,5 +39,4 @@
     flex-direction: row;
     column-gap: 12px;
   }
-
 }

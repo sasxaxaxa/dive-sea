@@ -1,5 +1,6 @@
 import './ProfileMini.scss'
 import PropTypes from "prop-types";
+import Button from "../Button/Button.jsx";
 
 const ProfileMini = (props) => {
   const {
@@ -13,21 +14,23 @@ const ProfileMini = (props) => {
     hasNumberTop,
     numberBottom,
     numberTop,
+    buttonType
   } = props
-
-  if (location !== 'recent-viewed') return null;
 
   const baseClass = `profile-mini__${location}`
 
   return (
     <div className={baseClass}>
       <div className={`${baseClass}-first`}>
-        <img
-          className={`${baseClass}-image ${baseClass}-image-container`}
-          src={photo}
-          alt='user photo'
-        />
+        <div className={`${baseClass}-image-container`}>
+          <img
+            className={`${baseClass}-image`}
+            src={photo}
+            alt='user photo'
+          />
+        </div>
       </div>
+
       <div className={`${baseClass}-second`}>
         <h3 className={`${baseClass}-title`}>
           {name}
@@ -37,19 +40,30 @@ const ProfileMini = (props) => {
         </p>
       </div>
       <div className={`${baseClass}-third`}>
-        <div className={`${baseClass}-volume-container`}>
-          <img
-            className={`${baseClass}-volume-icon`}
-            src="src/assets/icons/profileBidIcon.svg"
-            alt=''
-          />
-          <p className={`${baseClass}-volume`}>
-            {volume}
+        {volume && (
+          <div className={`${baseClass}-volume-container`}>
+            <img
+              className={`${baseClass}-volume-icon`}
+              src="src/assets/icons/profileBidIcon.svg"
+              alt=''
+            />
+            <p className={`${baseClass}-volume`}>
+              {volume}
+            </p>
+          </div>
+        )}
+        {percentage && (
+          <p className={`${baseClass}-percentage`}>
+            {percentage}
           </p>
-        </div>
-        <p className={`${baseClass}-percentage`}>
-          {percentage}
-        </p>
+        )}
+        {buttonType && (
+          <Button
+            label={buttonType === 'follow' ? 'Follow' : 'Unfollow'}
+            mode={buttonType === 'follow' ? 'follow' : 'unfollow'}
+            location={location}
+          />
+        )}
       </div>
     </div>
   )

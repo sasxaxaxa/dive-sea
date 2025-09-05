@@ -23,24 +23,68 @@
   },
   {
     "id": 3,
-    "name": "Alex Ca.",
-    "userName": "Alexy",
-    "photo": "src/assets/images/profiles/photo1.png",
-    "volume": "8,456",
-    "percentage": "+27.78%",
-    "floor-price": "3,5",
-    "owner": "2.2K",
-    "item": "500"
+    "name": "Michael R.",
+    "userName": "MikeyR",
+    "photo": "src/assets/images/profiles/photo3.png",
+    "volume": "12,874",
+    "percentage": "+14.62%",
+    "floor-price": "4,1",
+    "owner": "3.1K",
+    "item": "620"
   },
   {
     "id": 4,
-    "name": "Alex Ca.",
-    "userName": "Alexy",
+    "name": "Sophia L.",
+    "userName": "SophiL",
+    "photo": "src/assets/images/profiles/photo4.png",
+    "volume": "9,203",
+    "percentage": "+7.05%",
+    "floor-price": "2,9",
+    "owner": "2.7K",
+    "item": "450"
+  },
+  {
+    "id": 5,
+    "name": "Ethan W.",
+    "userName": "EthanW",
     "photo": "src/assets/images/profiles/photo1.png",
-    "volume": "8,456",
-    "percentage": "+27.78%",
-    "floor-price": "3,5",
-    "owner": "2.2K",
-    "item": "500"
+    "volume": "6,588",
+    "percentage": "-12.40%",
+    "floor-price": "3,0",
+    "owner": "1.9K",
+    "item": "380"
+  },
+  {
+    "id": 6,
+    "name": "Olivia D.",
+    "userName": "OliviaD",
+    "photo": "src/assets/images/profiles/photo2.png",
+    "volume": "11,445",
+    "percentage": "+22.18%",
+    "floor-price": "4,8",
+    "owner": "3.5K",
+    "item": "700"
+  },
+  {
+    "id": 7,
+    "name": "Daniel K.",
+    "userName": "DanK",
+    "photo": "src/assets/images/profiles/photo3.png",
+    "volume": "7,902",
+    "percentage": "-5.33%",
+    "floor-price": "2,7",
+    "owner": "2.1K",
+    "item": "410"
+  },
+  {
+    "id": 8,
+    "name": "Emily V.",
+    "userName": "EmilyV",
+    "photo": "src/assets/images/profiles/photo4.png",
+    "volume": "13,276",
+    "percentage": "+31.44%",
+    "floor-price": "5,2",
+    "owner": "4.0K",
+    "item": "820"
   }
 ]
