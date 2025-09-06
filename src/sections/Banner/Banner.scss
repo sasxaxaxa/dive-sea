@@ -1,6 +1,8 @@
 .banner {
   margin-bottom: 160px;
   margin-top: 180px;
+  overflow: hidden;
+
 
   &__inner {
     background-color: var(--color-black-1);
@@ -12,7 +14,7 @@
 
   &__first {
     padding-left: 66px;
-    padding-top:44px;
+    padding-top: 44px;
   }
 
   &__second {
@@ -47,12 +49,35 @@
     opacity: 0.6;
   }
 
-  &__image {
-    &-container {
-      position: relative;
-      display: inline-block;
-      border-radius: 16px;
-      overflow: hidden;
-    }
+  &__image-container {
+    position: relative;
+    display: inline-block
   }
+
+  &__image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 100%;
+    border-radius: 16px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 200, 255, 0.6) 0%,
+        rgb(226, 194, 181) 100%
+    );
+
+    filter: blur(50px);
+    transform: translateY(10px);
+    z-index: 1;
+  }
+
+  &__image {
+    position: relative;
+    border-radius: 16px;
+    z-index: 2;
+  }
+
 }

@@ -23,15 +23,15 @@ const TopCollection = () => {
           <ul className="top-collection__list">
             {MOCK_DATA.slice(0, 4).map((row, index) =>
               <li key={index} className="recent-viewed__item">
-                <ProfileMini
-                  key={index}
-                  name={row.name}
-                  userName={row.userName}
-                  photo={row.photo}
-                  volume={row.volume}
-                  percentage={row.percentage}
-                  location='top-collection'
-                />
+                {/*<ProfileMini*/}
+                {/*  key={index}*/}
+                {/*  name={row.name}*/}
+                {/*  userName={row.userName}*/}
+                {/*  photo={row.photo}*/}
+                {/*  volume={row.volume}*/}
+                {/*  percentage={row.percentage}*/}
+                {/*  location='top-collection'*/}
+                {/*/>*/}
               </li>
               )}
           </ul>

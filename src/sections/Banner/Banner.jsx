@@ -32,10 +32,6 @@ const Banner = () => {
               src="src/assets/images/image3.png"
               alt=""
             />
-            <img
-              className="banner__image-overlay"
-
-            />
           </div>
         </div>
       </div>
