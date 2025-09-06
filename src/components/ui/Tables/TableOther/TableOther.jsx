@@ -1,4 +1,4 @@
-import MOCK_DATA from '../../../../constants/MOCK_DATA.json'
+import MOCK_DATA from '../../../../constants/PROFILE_DATA.json'
 import { COLUMNS } from '../../../../constants/Columns.jsx'
 import './TableOther.scss'
 

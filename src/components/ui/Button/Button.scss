@@ -1,4 +1,6 @@
 .button {
+  text-wrap: nowrap;
+
   &-black {
     border: none;
     background-color: var(--color-black);

@@ -1,66 +1,10 @@
 import { createContext, useState, useContext } from "react";
+import cardData from "/src/constants/CARD_DATA.json";
 
 const CardsContext = createContext();
 
 export const CardsProvider = ({ children }) => {
-  const [cards, setCards] = useState([
-    {
-      id: 1,
-      title: "Sun-Glass",
-      preview: "src/assets/images/cards/sun-glass-1.png",
-      time: "07:09:12",
-      bid: "1.75",
-    },
-    {
-      id: 2,
-      title: "Sun-Glass",
-      preview: "src/assets/images/cards/sun-glass-2.png",
-      time: "07:09:12",
-      bid: "1.75",
-    },
-    {
-      id: 3,
-      title: "Sun-Glass",
-      preview: "src/assets/images/cards/sun-glass-3.png",
-      time: "07:09:12",
-      bid: "1.75",
-    },
-    {
-      id: 4,
-      title: "NuEvey",
-      preview: "src/assets/images/cards/nu-evey-1.png",
-      time: "07:09:12",
-      bid: "1.25",
-    },
-    {
-      id: 5,
-      title: "NuEvey",
-      preview: "src/assets/images/cards/nu-evey-2.png",
-      time: "07:09:12",
-      bid: "1.25",
-    },
-    {
-      id: 6,
-      title: "Sun-Glass",
-      preview: "src/assets/images/cards/sun-glass-1.png",
-      time: "07:09:12",
-      bid: "1.75",
-    },
-    {
-      id: 7,
-      title: "Sun-Glass",
-      preview: "src/assets/images/cards/sun-glass-2.png",
-      time: "07:09:12",
-      bid: "1.75",
-    },
-    {
-      id: 8,
-      title: "Sun-Glass",
-      preview: "src/assets/images/cards/sun-glass-3.png",
-      time: "07:09:12",
-      bid: "1.75",
-    },
-  ]);
+  const [cards, setCards] = useState(cardData);
 
   const removeCard = (id) => {
     setCards((prev) => prev.filter((card) => card.id !== id));

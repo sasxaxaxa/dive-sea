@@ -1,0 +1,29 @@
+.discover {
+  padding-top: 110px;
+
+  &__title {
+    font-family: var(--font-family-popins);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 67%;
+    color: var(--color-black-1);
+    padding-bottom: 44px;
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 33px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 68px;
+    padding-block: 100px;
+  }
+
+}

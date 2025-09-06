@@ -32,7 +32,27 @@
     gap: 30px;
   }
 
-  &.is-fixed {
-    position: fixed;
+  &__form {
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 14px;
+    width: 348px;
+    padding-left: 23px;
+    column-gap: 26px;
+    text-wrap: nowrap;
+
+    &-input {
+      font-family: var(--font-family-poppins);
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 117%;
+      letter-spacing: -0.02em;
+
+      &::placeholder {
+        color: #C2C3CB;
+      }
+    }
   }
 }

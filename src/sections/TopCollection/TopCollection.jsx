@@ -2,7 +2,7 @@ import './TopCollection.scss'
 import TableOther from "../../components/ui/Tables/TableOther/TableOther.jsx";
 import Button from "../../components/ui/Button/Button.jsx";
 import {COLUMNS} from "../../constants/Columns.jsx";
-import MOCK_DATA from "../../constants/MOCK_DATA.json";
+import MOCK_DATA from "../../constants/PROFILE_DATA.json";
 import ProfileMini from "../../components/ui/Profile/ProfileMini.jsx";
 
 const TopCollection = () => {

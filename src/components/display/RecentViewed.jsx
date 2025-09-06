@@ -1,5 +1,5 @@
 import './RecentViewed.scss'
-import MOCK_DATA from '../../constants/MOCK_DATA.json'
+import MOCK_DATA from '../../constants/PROFILE_DATA.json'
 import ProfileMini from "../ui/Profile/ProfileMini.jsx";
 import classnames from "classnames";
 import PropTypes from "prop-types";

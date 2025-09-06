@@ -40,11 +40,20 @@ const Header = () => {
           </ul>
         </nav>
         <div className="header__actions">
-          <Button
-            mode='black'
-            location='header'
-            label='добавить форму поиск'
-          />
+          <form
+            className="header__form"
+            action="/search" method="get">
+            <img
+              src="src/assets/search.svg"
+              width="22px"
+              height="22px"
+            />
+            <input
+              className="header__form-input"
+              type="text"
+              name="query"
+              placeholder="Search Art Work/ Creator"/>
+          </form>
           <Button
             mode='black'
             location='header'

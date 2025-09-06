@@ -1,6 +1,6 @@
 import Button from "../../components/ui/Button/Button.jsx";
 import './Explore.scss'
-import { useCards, CardsProvider } from "../../context/CardsContext.jsx";
+import {useCards, CardsProvider} from "../../context/CardsContext.jsx";
 import Card from "../../components/ui/Card/Card.jsx";
 
 const buttons = [
@@ -24,7 +24,7 @@ const buttons = [
 ]
 
 const ExploreContent = () => {
-  const { cards, removeCard } = useCards();
+  const {cards, removeCard} = useCards();
 
   return (
     <section className="explore container">
@@ -44,13 +44,13 @@ const ExploreContent = () => {
       </div>
 
       <div className="explore__cards">
-        {cards.map((card) => (
+        {cards.slice(0, 8).map((card) => (
           <Card
             key={card.id}
             {...card}
             onTimeEnd={() => removeCard(card.id)}
           />
-          ))}
+        ))}
       </div>
 
       <div className="top-collection__button">
@@ -69,7 +69,7 @@ const ExploreContent = () => {
 const Explore = () => {
   return (
     <CardsProvider>
-      <ExploreContent />
+      <ExploreContent/>
     </CardsProvider>
 
   )

@@ -1,97 +1,137 @@
-import * as React from 'react';
+import {useState} from "react";
 import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from "@mui/material/Typography";
+import { styled } from '@mui/material/styles';
+import AccordionIcon from "./AccordionIcon.jsx";
 
-export default function ControlledAccordions() {
-  const [expanded, setExpanded] = React.useState(false);
+const CustomAccordion = styled(Accordion)`
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ADADAD;
+
+  &:before {
+    display: none;
+  }
+`;
+
+const CustomAccordionSummary = styled(AccordionSummary)`
+  padding-top: 31px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+`;
+
+const CustomTypographyTitle = styled(Typography)`
+  font-family: var(--font-family-poppins);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 253%;
+  color: #323142;
+`;
+
+const CustomTypographyDescription = styled(Typography)`
+  font-family: var(--font-family-poppins);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 177%;
+  color: var(--color-gray-6);
+  padding-bottom: 30px;
+`;
+
+const AccordionAQ = () => {
+
+  const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
-  };
+  }
 
   return (
-    <div style={{ width: '100%' }}>
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+    <div className="accordion container">
+      <CustomAccordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <CustomAccordionSummary
+          className="accordion__summary"
+          expandIcon={<AccordionIcon />}
         >
-          <Typography sx={{ flexBasis: '33.33%', flexShrink: 0 }}>
-            General settings
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            I am an accordion
-          </Typography>
-        </AccordionSummary>
+          <CustomTypographyTitle className="accordion__title">
+            What is an NFT?
+          </CustomTypographyTitle>
+        </CustomAccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-          </Typography>
+          <CustomTypographyDescription className="accordion__description">
+            A unique digital asset stored on a blockchain, representing ownership of art, music, or other digital items.
+          </CustomTypographyDescription>
         </AccordionDetails>
-      </Accordion>
+      </CustomAccordion>
 
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
+      <CustomAccordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+        <CustomAccordionSummary
+          className="accordion__summary"
+          expandIcon={<AccordionIcon />}
         >
-          <Typography sx={{ flexBasis: '33.33%', flexShrink: 0 }}>Users</Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            You are currently not an owner
-          </Typography>
-        </AccordionSummary>
+          <CustomTypographyTitle className="accordion__title">
+            What can I use NFTs for?
+          </CustomTypographyTitle>
+        </CustomAccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-            varius pulvinar diam eros in elit. Pellentesque convallis laoreet laoreet.
-          </Typography>
+          <CustomTypographyDescription className="accordion__description">
+            Collecting, trading, proving ownership, accessing exclusive content, or supporting creators.
+          </CustomTypographyDescription>
         </AccordionDetails>
-      </Accordion>
+      </CustomAccordion>
 
-      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3bh-content"
-          id="panel3bh-header"
+      <CustomAccordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+        <CustomAccordionSummary
+          className="accordion__summary"
+          expandIcon={<AccordionIcon />}
         >
-          <Typography sx={{ flexBasis: '33.33%', flexShrink: 0 }}>
-            Advanced settings
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Filtering has been entirely disabled for whole web server
-          </Typography>
-        </AccordionSummary>
+          <CustomTypographyTitle className="accordion__title">
+            What is the difference between an NFT and cryptocurrency?
+          </CustomTypographyTitle>
+        </CustomAccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet
-            egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <CustomTypographyDescription className="accordion__description">
+            Cryptocurrency is interchangeable; NFTs are unique, non-fungible assets with individual value.
+          </CustomTypographyDescription>
         </AccordionDetails>
-      </Accordion>
+      </CustomAccordion>
 
-      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
+      <CustomAccordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+        <CustomAccordionSummary
+          className="accordion__summary"
+          expandIcon={<AccordionIcon />}
         >
-          <Typography sx={{ flexBasis: '33.33%', flexShrink: 0 }}>
-            Personal data
-          </Typography>
-        </AccordionSummary>
+          <CustomTypographyTitle className="accordion__title">
+            How much is an NFT worth?
+          </CustomTypographyTitle>
+        </CustomAccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet
-            egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+          <CustomTypographyDescription className="accordion__description">
+            Its value depends on demand, rarity, creator reputation, and market trends.
+          </CustomTypographyDescription>
         </AccordionDetails>
-      </Accordion>
+      </CustomAccordion>
+
+      <CustomAccordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+        <CustomAccordionSummary
+          className="accordion__summary"
+          expandIcon={<AccordionIcon />}
+        >
+          <CustomTypographyTitle className="accordion__title">
+            How do I purchase an NFT on your platform ?
+          </CustomTypographyTitle>
+        </CustomAccordionSummary>
+        <AccordionDetails>
+          <CustomTypographyDescription className="accordion__description">
+            Create an account, connect your crypto wallet, add funds, browse listings, and complete the purchase.
+          </CustomTypographyDescription>
+        </AccordionDetails>
+      </CustomAccordion>
     </div>
-  );
+  )
 }
+
+export default AccordionAQ
+
