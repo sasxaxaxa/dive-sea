@@ -1,5 +1,12 @@
 .discover {
-  padding-top: 110px;
+  padding-block: 110px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__title {
     font-family: var(--font-family-popins);

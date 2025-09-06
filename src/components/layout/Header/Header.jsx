@@ -1,6 +1,7 @@
 import './Header.scss';
 import Logo from "../../ui/Logo/Logo.jsx";
 import Button from "../../ui/Button/Button.jsx";
+import { Link } from 'react-router-dom';
 
 const navItems = [
   {
@@ -32,9 +33,13 @@ const Header = () => {
           <ul className="header__menu-list">
             {navItems.map(({label, href}, index) => (
               <li key={index} className="header__menu-item">
-                <a className="header__menu-link" href={href}>
-                  {label}
-                </a>
+                {/*<a className="header__menu-link" href={href}>*/}
+                {/*  {label}*/}
+                {/*</a>*/}
+                <Link
+                  className="header__menu-link"
+                  to={href}>{label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -52,7 +57,7 @@ const Header = () => {
               className="header__form-input"
               type="text"
               name="query"
-              placeholder="Search Art Work/ Creator"/>
+              placeholder="Search Art Work / Creator"/>
           </form>
           <Button
             mode='black'

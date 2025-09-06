@@ -1,0 +1,14 @@
+.faq {
+  margin-top: 140px;
+
+  &__title {
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    color: #18181b;
+
+    margin-bottom: 44px;
+  }
+}

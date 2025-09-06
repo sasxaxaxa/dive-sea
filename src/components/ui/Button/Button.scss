@@ -1,6 +1,10 @@
 .button {
   text-wrap: nowrap;
 
+  &__label {
+    align-self: center;
+  }
+
   &-black {
     border: none;
     background-color: var(--color-black);

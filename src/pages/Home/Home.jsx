@@ -6,7 +6,7 @@ import Explore from "../../sections/Explore/Explore.jsx";
 import Unleash from "../../sections/Unleash/Unleash.jsx";
 import RecentViewed from "../../components/display/RecentViewed.jsx";
 import Banner from "../../sections/Banner/Banner.jsx";
-import AccordionAQ from "../../components/ui/Accordion/Accordion.jsx";
+import FAQ from "../../sections/FAQ/FAQ.jsx";
 
 const Home = () => {
 
@@ -20,7 +20,7 @@ const Home = () => {
       <TopCollection />
       <Explore />
       <Unleash />
-      <AccordionAQ />
+      <FAQ />
       <Banner />
     </div>
   );

@@ -18,8 +18,8 @@ const CustomAccordion = styled(Accordion)`
 `;
 
 const CustomAccordionSummary = styled(AccordionSummary)`
-  padding-top: 31px;
-  padding-bottom: 17px;
+  padding-top: 20px;
+  padding-bottom: 6px;
   padding-left: 14px;
 `;
 
@@ -49,7 +49,7 @@ const AccordionAQ = () => {
   }
 
   return (
-    <div className="accordion container">
+    <div className="accordion">
       <CustomAccordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <CustomAccordionSummary
           className="accordion__summary"

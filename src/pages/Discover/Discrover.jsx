@@ -40,7 +40,7 @@ const DiscoverContent = () => {
           ))}
         </div>
         <div className="discover__cards">
-          {cards.slice(0, 16).map((card) => (
+          {cards.slice(0, 12).map((card) => (
             <Card
               key={card.id}
               {...card}
@@ -48,6 +48,11 @@ const DiscoverContent = () => {
             />
           ))}
         </div>
+        <Button
+          label="Show more"
+          mode='black'
+          location='hero'
+        />
       </div>
     </div>
   )

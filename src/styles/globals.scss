@@ -47,6 +47,8 @@ svg * {
 a, a:link, a:visited  {
   text-decoration: none;
   color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover  {
