@@ -1,0 +1,161 @@
+.join {
+  font-family: var(--font-family-poppins);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 1200px;
+  margin-bottom: 193px;
+  margin-top: 62px;
+
+  &__center {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__orbit-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 121%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #18181b;
+    margin-bottom: 21px;
+  }
+
+  &__description {
+    width: 400px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 178%;
+    text-align: center;
+    color: #12141d;
+    margin-bottom: 35px;
+  }
+
+  &__orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: rotateOrbit 10s linear infinite;
+
+    &.orbit-small {
+      width: 831px;
+      height: 831px;
+      border: 1px solid #D2D2D2;
+    }
+
+    &.orbit-large {
+      width: 1060px;
+      height: 1060px;
+      border: 1px solid #D2D2D2;
+      animation-duration: 20s;
+    }
+  }
+}
+
+.planet {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.planet1 {
+  background-image: url('src/assets/images/planets/planet1.png');
+  top: 28%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.planet2 {
+  background-image: url('src/assets/images/planets/planet2.png');
+  top: 3%;
+  left: 63%;
+  transform: translate(50%, -50%);
+}
+
+.planet3 {
+  background-image: url('src/assets/images/planets/planet3.png');
+  width: 60px;
+  height: 60px;
+  bottom: 42%;
+  left: 99%;
+  transform: translate(-50%, 50%);
+}
+
+.planet4 {
+  background-image: url('src/assets/images/planets/planet4.png');
+  bottom: 5%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.planet5 {
+  background-image: url('src/assets/images/planets/planet5.png');
+  width: 60px;
+  height: 60px;
+  top: 7%;
+  left: 18%;
+  transform: translate(50%, -50%);
+}
+
+.planet6 {
+  background-image: url('src/assets/images/planets/planet6.png');
+  top: 12%;
+  left: 79%;
+  transform: translate(50%, -50%);
+}
+
+.planet7 {
+  background-image: url('src/assets/images/planets/planet7.png');
+  width: 60px;
+  height: 60px;
+  bottom: 20%;
+  right: 5%;
+  transform: translate(-50%, 50%);
+}
+
+.planet8 {
+  background-image: url('src/assets/images/planets/planet8.png');
+  bottom: 0;
+  right: 43%;
+  transform: translate(-50%, 50%);
+}
+
+.planet9 {
+  background-image: url('src/assets/images/planets/planet9.png');
+  bottom: 24%;
+  left: 8%;
+  transform: translate(-50%, 50%);
+}
+
+@keyframes rotateOrbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

@@ -7,6 +7,7 @@ import Unleash from "../../sections/Unleash/Unleash.jsx";
 import RecentViewed from "../../components/display/RecentViewed.jsx";
 import Banner from "../../sections/Banner/Banner.jsx";
 import FAQ from "../../sections/FAQ/FAQ.jsx";
+import Join from "../../sections/Join/Join.jsx";
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
       <TopCollection />
       <Explore />
       <Unleash />
+      <Join />
       <FAQ />
       <Banner />
     </div>

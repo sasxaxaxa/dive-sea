@@ -15,7 +15,12 @@
     color: #141416;
   }
 
+  &__table-wrapper {
+    margin-bottom: 40px;
+  }
+
   &__table {
+
     &-cell {
       font-weight: 500;
       font-size: 24px;
@@ -69,7 +74,6 @@
 
 .top-collection__button {
   align-self: flex-end;
-  margin-top: 85px;
 }
 
 .top-collection__table {
