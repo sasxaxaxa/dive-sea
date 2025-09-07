@@ -1,54 +1,100 @@
 import './TopCollection.scss'
-import TableOther from "../../components/ui/Tables/TableOther/TableOther.jsx";
 import Button from "../../components/ui/Button/Button.jsx";
-import {COLUMNS} from "../../constants/Columns.jsx";
-import MOCK_DATA from "../../constants/PROFILE_DATA.json";
+import { COLUMNS } from "../../constants/Columns.jsx";
+import COLLECTION_DATA from "../../constants/COLLECTION_DATA.json";
 import ProfileMini from "../../components/ui/Profile/ProfileMini.jsx";
 
 const TopCollection = () => {
   return (
     <section className="top-collection container">
       <div className="top-collection__inner">
-        <h2 className="top-collection__title">
-          Top Collection
-        </h2>
-        <div className="table">
-          <div className="table__header">
-            {COLUMNS.map((column, index) => (
-              <div key={index} className="table__cell table__cell-header">
-                {column.Header}
-              </div>
-            ))}
-          </div>
-          <ul className="top-collection__list">
-            {MOCK_DATA.slice(0, 4).map((row, index) =>
-              <li key={index} className="recent-viewed__item">
-                {/*<ProfileMini*/}
-                {/*  key={index}*/}
-                {/*  name={row.name}*/}
-                {/*  userName={row.userName}*/}
-                {/*  photo={row.photo}*/}
-                {/*  volume={row.volume}*/}
-                {/*  percentage={row.percentage}*/}
-                {/*  location='top-collection'*/}
-                {/*/>*/}
-              </li>
-              )}
-          </ul>
+        <h2 className="top-collection__title">Top Collection</h2>
+        <div className="top-collection__table-wrapper">
+          <table className="top-collection__table">
+            <thead className="top-collection__table-head">
+            <tr className="top-collection__table-row">
+              {COLUMNS.map((column, index) => (
+                <th
+                  key={index}
+                  className="top-collection__table-header"
+                >
+                  {column.Header}
+                </th>
+              ))}
+            </tr>
+            </thead>
 
+            <tbody className="top-collection__table-body">
+            {COLLECTION_DATA.slice(0, 4).map((row, index) => (
+              <tr key={index} className="top-collection__table-row">
+                <td className="top-collection__table-cell top-collection__table-cell--profile">
+                  <ProfileMini
+                    name={row.name}
+                    userName={row.userName}
+                    photo={row.photo}
+                    location="table"
+                  />
+                </td>
+
+                <td className="top-collection__table-cell">
+                  <div className="top-collection__table-cell-volume">
+                    <img
+                      className="top-collection__icon"
+                      src="src/assets/icons/profileBidIcon.svg"
+                      alt=""
+                      width="16"
+                      height="27"
+                    />
+                    {row.volume}
+                  </div>
+                </td>
+
+                <td
+                  className={`top-collection__table-cell top-collection__table-cell-percentage ${
+                    row.percentage.startsWith("+")
+                      ? "top-collection__table-cell-percentage-green"
+                      : "top-collection__table-cell-percentage-red"
+                  }`}
+                >
+                  {row.percentage}
+                </td>
+
+                <td className="top-collection__table-cell">
+                  <div className="top-collection__table-cell-price">
+                    <img
+                      className="top-collection__icon"
+                      src="src/assets/icons/profileBidIcon.svg"
+                      alt=""
+                      width="16"
+                      height="27"
+                    />
+                    {row.price}
+                  </div>
+                </td>
+
+                <td className="top-collection__table-cell top-collection__table-cell-owners">
+                  {row.owners}
+                </td>
+                <td className="top-collection__table-cell top-collection__table-cell-items">
+                  {row.items}
+                </td>
+              </tr>
+            ))}
+            </tbody>
+          </table>
         </div>
+
         <div className="top-collection__button">
           <Button
-            mode='gray'
-            label='Explore All'
-            iconPosition='after'
-            iconName='src/assets/arrow-gray-right.svg'
+            mode="gray"
+            label="Explore All"
+            iconPosition="after"
+            iconName="src/assets/arrow-gray-right.svg"
           />
         </div>
       </div>
     </section>
-)
-
-}
+  );
+};
 
 export default TopCollection

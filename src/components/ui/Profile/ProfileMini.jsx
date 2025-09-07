@@ -36,6 +36,8 @@ const ProfileMini = (props) => {
           {name}
         </h3>
         <p className={`${baseClass}-description`}>
+          {location === 'table' ? 'By ' : ''}
+          {location === 'best-sellers' ? '@' : ''}
           {userName}
         </p>
       </div>

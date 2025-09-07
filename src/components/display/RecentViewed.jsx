@@ -1,5 +1,5 @@
 import './RecentViewed.scss'
-import MOCK_DATA from '../../constants/PROFILE_DATA.json'
+import PROFILE_DATA from '../../constants/PROFILE_DATA.json'
 import ProfileMini from "../ui/Profile/ProfileMini.jsx";
 import classnames from "classnames";
 import PropTypes from "prop-types";
@@ -19,7 +19,7 @@ const RecentViewed = (props) => {
         Recent Viewed
       </h3>
       <ul className="recent-viewed__list">
-        {MOCK_DATA.slice(0, 2).map((row, index) =>
+        {PROFILE_DATA.slice(0, 2).map((row, index) =>
           <li key={index} className="recent-viewed__item">
             <ProfileMini
               key={index}

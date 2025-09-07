@@ -1,5 +1,5 @@
 import './BestSellers.scss'
-import MOCK_DATA from '../../constants/PROFILE_DATA.json'
+import PROFILE_DATA from '../../constants/PROFILE_DATA.json'
 import ProfileMini from "../ui/Profile/ProfileMini.jsx";
 
 const BestSellers = () => {
@@ -10,12 +10,12 @@ const BestSellers = () => {
           Best Sellers
         </h3>
         <ul className="best-sellers__list">
-          {MOCK_DATA.slice(0, 6).map((row, index) =>
+          {PROFILE_DATA.slice(0, 6).map((row, index) =>
             <li key={index} className="best-sellers__item">
               <ProfileMini
                 key={index}
                 name={row.name}
-                userName={`@${row.userName}`}
+                userName={row.userName}
                 photo={row.photo}
                 location='best-sellers'
                 buttonType='unfollow'

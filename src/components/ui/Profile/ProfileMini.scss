@@ -137,4 +137,55 @@
       color: #777e90;
     }
   }
+
+  &__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 221px;
+    column-gap: 25px;
+
+    &-first {
+      max-width: 80px;
+    }
+
+    &-second {
+      width: 139px;
+      text-wrap: nowrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &-title {
+      font-family: var(--font-family-poppins);
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 140%;
+      color: #141416;
+    }
+
+    &-description {
+      font-family: var(--font-family-poppins);
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      color: #64748b;
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+
+      &-container {
+        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
 }
