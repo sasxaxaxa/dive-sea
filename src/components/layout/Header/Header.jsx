@@ -32,10 +32,7 @@ const Header = () => {
         <nav className="header__menu">
           <ul className="header__menu-list">
             {navItems.map(({label, href}, index) => (
-              <li key={index} className="header__menu-item">
-                {/*<a className="header__menu-link" href={href}>*/}
-                {/*  {label}*/}
-                {/*</a>*/}
+              <li key={index}>
                 <Link
                   className="header__menu-link"
                   to={href}>{label}

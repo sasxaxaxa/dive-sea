@@ -54,7 +54,7 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
 
-    animation: rotateOrbit 10s linear infinite;
+    animation: rotateOrbit 25s linear infinite;
 
     &.orbit-small {
       width: 831px;
@@ -66,7 +66,7 @@
       width: 1060px;
       height: 1060px;
       border: 1px solid #D2D2D2;
-      animation-duration: 20s;
+      animation-duration: 35s;
     }
   }
 }

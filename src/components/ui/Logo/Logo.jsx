@@ -1,4 +1,3 @@
-import './Logo.scss'
 import PropTypes from 'prop-types';
 
 const title = 'Home'
