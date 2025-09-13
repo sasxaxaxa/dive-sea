@@ -7,34 +7,35 @@ const Button = (props) => {
     label,
     mode = 'black',
     location = '',
-    // hasFillIcon = false,
-    isLabelHidden = false,
-    iconPosition = 'before',
+    href,
     iconName,
   } = props;
 
-  const title = isLabelHidden ? undefined : label
+  const title = label ? label : ''
+  const isLink = href !== undefined
+  const Component = isLink ? 'a' : 'button'
+  const linkProps = { href }
+  const specificProps = isLink ? linkProps : undefined
 
-  const iconComponent = iconName &&
-    <img
-      src={iconName}
-      alt=''
-    />
+   const iconComponent = typeof iconName === 'string'
+    ? <img className="button__icon" src={iconName} alt="" />
+    : iconName
 
   return (
-    <button
-      className={
-        classnames(
-          'button',
-          `button-${mode}`,
-          `button-${location}`
-        )}>
-      {iconPosition === 'before' && iconComponent}
-      {!isLabelHidden && (
-        <span className="button__label">{title}</span>
+    <Component
+      className={classnames(
+        'button',
+        `button-${mode}`,
+        `button-${location}`
       )}
-      {iconPosition === 'after' && iconComponent}
-    </button>
+      title={title}
+      aria-label={title}
+      {...specificProps}
+    >
+      {iconComponent}
+      {title}
+    </Component>
+  
   )
 }
 

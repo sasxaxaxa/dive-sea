@@ -3,7 +3,9 @@ import Button from "../Button/Button.jsx"
 import PropTypes from "prop-types"
 import {useEffect, useState} from "react"
 
-const bidIcon = 'src/assets/bid-icons.svg'
+const bidIcon = <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.376 1.63513L5.8623 10.8982L11.376 14.2064L16.8897 10.8982L11.376 1.63513ZM5.8623 12.0009L11.376 19.7201L16.8897 12.0009L11.376 15.3092L5.8623 12.0009Z" fill="#141416" />
+              </svg>
 
 const Card = (props) => {
 
@@ -82,11 +84,7 @@ const Card = (props) => {
               Current bid
             </p>
             <div className="card__bid-item">
-              <img
-                className="card__bid-image"
-                src={bidIcon}
-                alt=''
-              />
+              {bidIcon}
               <p className="card__bid-description">
                 {bid}
               </p>

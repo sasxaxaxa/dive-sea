@@ -4,6 +4,10 @@ import { COLUMNS } from "../../constants/Columns.jsx";
 import COLLECTION_DATA from "../../constants/COLLECTION_DATA.json";
 import ProfileMini from "../../components/ui/Profile/ProfileMini.jsx";
 
+const bidIcon = <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15.975 2.81458L7.76758 16.603L15.975 21.5274L24.1824 16.603L15.975 2.81458ZM7.76758 18.2445L15.975 29.7348L24.1824 18.2445L15.975 23.1689L7.76758 18.2445Z" fill="#141416" />
+</svg>
+
 const TopCollection = () => {
   return (
     <section className="top-collection container">
@@ -38,13 +42,7 @@ const TopCollection = () => {
 
                 <td className="top-collection__table-cell">
                   <div className="top-collection__table-cell-volume">
-                    <img
-                      className="top-collection__icon"
-                      src="src/assets/icons/profileBidIcon.svg"
-                      alt=""
-                      width="16"
-                      height="27"
-                    />
+                    {bidIcon}
                     {row.volume}
                   </div>
                 </td>
@@ -61,13 +59,7 @@ const TopCollection = () => {
 
                 <td className="top-collection__table-cell">
                   <div className="top-collection__table-cell-price">
-                    <img
-                      className="top-collection__icon"
-                      src="src/assets/icons/profileBidIcon.svg"
-                      alt=""
-                      width="16"
-                      height="27"
-                    />
+                    {bidIcon}
                     {row.price}
                   </div>
                 </td>
