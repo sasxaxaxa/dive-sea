@@ -9,6 +9,7 @@ const Button = (props) => {
     location = '',
     href,
     iconName,
+    iconPosition = 'after',
   } = props;
 
   const title = label ? label : ''
@@ -17,7 +18,7 @@ const Button = (props) => {
   const linkProps = { href }
   const specificProps = isLink ? linkProps : undefined
 
-   const iconComponent = typeof iconName === 'string'
+  const iconComponent = typeof iconName === 'string'
     ? <img className="button__icon" src={iconName} alt="" />
     : iconName
 
@@ -32,10 +33,11 @@ const Button = (props) => {
       aria-label={title}
       {...specificProps}
     >
-      {iconComponent}
+      {iconPosition === 'before' && iconComponent}
       {title}
+      {iconPosition === 'after' && iconComponent}
     </Component>
-  
+
   )
 }
 

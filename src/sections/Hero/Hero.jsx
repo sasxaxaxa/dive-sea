@@ -32,6 +32,7 @@ const Hero = () => {
             mode='black'
             location='hero'
             label='Explore More'
+            href='/discover'
           />
           <Button
             mode='transparent'

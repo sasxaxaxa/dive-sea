@@ -9,9 +9,14 @@
     border: none;
     background-color: var(--color-black);
     color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-gray-6);
+      color: var(--color-white);
+    }
   }
-  
-  &-transparent-border.button-banner{
+
+  &-transparent-border.button-banner {
     padding-inline: 30px;
   }
 
@@ -24,6 +29,10 @@
   &-transparent.button-hero {
     padding-block: 18px;
     padding-inline: 21px;
+
+    &:hover {
+      background-color: var(--color-gray-3);
+    }
   }
 
   &-transparent {
@@ -100,6 +109,8 @@
       padding-left: 22px;
       padding-right: 40px;
       color: #929292;
+
+      
     }
 
     &-right {
@@ -107,6 +118,7 @@
       border: 0;
       padding-right: 22px;
       padding-left: 40px;
+      
     }
   }
 

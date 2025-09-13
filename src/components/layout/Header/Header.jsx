@@ -35,7 +35,8 @@ const Header = () => {
               <li key={index}>
                 <Link
                   className="header__menu-link"
-                  to={href}>{label}
+                  to={href}>
+                    {label}
                 </Link>
               </li>
             ))}
