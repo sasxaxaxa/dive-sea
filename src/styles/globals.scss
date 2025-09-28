@@ -1,6 +1,5 @@
 html, body {
   overflow-x: hidden;
-
 }
 
 th {
@@ -31,8 +30,8 @@ svg * {
 
 /* Reset and base styles  */
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -124,18 +123,3 @@ legend {
 input[type='file'] {
   max-width: 100%;
 }
-
-.container {
-  width: 100%;
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  margin-inline: auto;
-  padding-inline: var(--container-padding-x);
-}
-
-.container-left {
-  width: 100%;
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  margin-inline: auto;
-  padding-left: var(--container-padding-x);
-}
-

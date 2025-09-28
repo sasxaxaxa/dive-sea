@@ -15,7 +15,7 @@ const points = [
 
 const Unleash = () => {
   return (
-    <section className="unleash container">
+    <section className="unleash">
       <div className="unleash__inner">
         <div className="unleash__first">
           <h2 className="unleash__title">

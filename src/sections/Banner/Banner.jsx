@@ -3,7 +3,7 @@ import Button from "../../components/ui/Button/Button.jsx";
 
 const Banner = () => {
   return (
-    <section className="banner container">
+    <section className="banner">
       <div className="banner__inner">
         <div className="banner__first">
           <h1 className="banner__title">

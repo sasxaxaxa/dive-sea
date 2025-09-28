@@ -15,7 +15,7 @@ const arrow = <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns=
 
 const TopCollection = () => {
   return (
-    <section className="top-collection container">
+    <section className="top-collection">
       <div className="top-collection__inner">
         <h2 className="top-collection__title">Top Collection</h2>
         <div className="top-collection__table-wrapper">

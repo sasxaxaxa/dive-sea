@@ -1,3 +1,5 @@
+@import 'media';
+
 :root {
   --color-white: #F9F9F9;
   --color-gray: #F1F1F1;
@@ -40,8 +42,4 @@
   --border-radius-l: 21px;
   --border-radius-xl: 24px;
   --border-radius-xxl: 30px;
-
-  --container-width: 1248px;
-  --container-padding-x: 95px;
-
 }

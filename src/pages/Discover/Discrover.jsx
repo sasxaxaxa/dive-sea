@@ -32,7 +32,7 @@ const DiscoverContent = () => {
 
   return (
     <div className="discover">
-      <div className="discover__inner container">
+      <div className="discover__inner">
         <h2 className="discover__title">
           Discover NFTs
         </h2>

@@ -13,17 +13,17 @@ const Home = () => {
 
   return (
     <div>
-      <Hero />
-      <Weekly />
-      <RecentViewed
-        position="first"
-      />
-      <TopCollection />
-      <Explore />
-      <Unleash />
-      <Join />
-      <FAQ />
-      <Banner />
+      {/*<Hero />*/}
+      {/*<Weekly />*/}
+      {/*<RecentViewed*/}
+      {/*  position="first"*/}
+      {/*/>*/}
+      {/*<TopCollection />*/}
+      {/*<Explore />*/}
+      {/*<Unleash />*/}
+      {/*<Join />*/}
+      {/*<FAQ />*/}
+      {/*<Banner />*/}
     </div>
   );
 };

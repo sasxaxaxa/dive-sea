@@ -67,11 +67,6 @@ const Hero = () => {
             src='src/assets/images/image1.png'
             alt='Nft Element'
           />
-          <img
-            className="hero__first-gradient"
-            src='src/assets/images/light1.png'
-            alt=''
-          />
           <div className="hero__slider">
             <Slider />
           </div>
@@ -91,11 +86,6 @@ const Hero = () => {
             className="hero__image-second"
             src='src/assets/images/image2.png'
             alt='Nft Element'
-          />
-          <img
-            className="hero__second-gradient"
-            src='src/assets/images/light2.png'
-            alt=''
           />
         </div>
       </div>

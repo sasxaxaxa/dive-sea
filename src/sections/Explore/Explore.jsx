@@ -35,7 +35,7 @@ const ExploreContent = () => {
   const { cards, removeCard } = useCards();
 
   return (
-    <section className="explore container">
+    <section className="explore">
       <h2 className="explore__title">
         Explore Marketplace
       </h2>

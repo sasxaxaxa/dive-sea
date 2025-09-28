@@ -1,5 +1,20 @@
+@use '../../../styles/media' as *;
+
 .header {
   width: 100%;
+  padding-left: 120px;
+  padding-right: 125px;
+  position: relative;
+
+  @include laptop-m {
+    padding-left: 93px;
+    padding-right: 96px;
+  }
+
+  @include laptop {
+    padding-left: 66px;
+    padding-right: 68px;
+  }
 
   &__inner {
     display: flex;
@@ -57,6 +72,36 @@
       &::placeholder {
         color: #C2C3CB;
       }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.2s ease, opacity 0.2s ease;
+
+    &.active {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    &__nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__burger {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-self: center;
     }
   }
 }
