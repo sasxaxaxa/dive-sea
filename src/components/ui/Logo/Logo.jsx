@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import classNames from "classnames";
 
 const title = 'Home'
 
@@ -15,8 +16,6 @@ const Logo = ({href = '/', mode=''}) => {
       <img
         src={logoPath}
         alt="Dive sea logo"
-        width={53}
-        height={53}
       />
     </a>
   )

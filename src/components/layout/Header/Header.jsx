@@ -49,7 +49,14 @@ const Header = () => {
   return (
     <header className={`header header-container ${isOpen ? 'open' : ''}`}>
       <div className="header__inner">
-        <Logo mode='black'/>
+        <div className="header__logo">
+          <Logo
+            mode='black'
+          />
+        </div>
+        <div className="header__overlay-logo">
+          DiveSea
+        </div>
         <nav className="header__menu">
           <ul className="header__menu-list">
             {headerLinks.map(({label, href}, index) => (
@@ -63,27 +70,26 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        {/*<div className="header__actions">*/}
-        {/*  <form*/}
-        {/*    className="header__form"*/}
-        {/*    action="/search" method="get">*/}
-        {/*    <img*/}
-        {/*      src="src/assets/search.svg"*/}
-        {/*      width="22px"*/}
-        {/*      height="22px"*/}
-        {/*    />*/}
-        {/*    <input*/}
-        {/*      className="header__form-input"*/}
-        {/*      type="text"*/}
-        {/*      name="query"*/}
-        {/*      placeholder="Search Art Work / Creator"/>*/}
-        {/*  </form>*/}
-        {/*  <Button*/}
-        {/*    mode='black'*/}
-        {/*    location='header'*/}
-        {/*    label='Connect Wallet'*/}
-        {/*  />*/}
-        {/*</div>*/}
+        <div className="header__actions">
+          <form
+            className="header__form"
+            action="/search" method="get">
+            <img
+              className="header__form-icon"
+              src="src/assets/search.svg"
+            />
+            <input
+              className="header__form-input"
+              type="text"
+              name="query"
+              placeholder="Search Art Work / Creator"/>
+          </form>
+          <Button
+            mode='black'
+            location='header'
+            label='Connect Wallet'
+          />
+        </div>
         <div className="header__burger">
           <BurgerButton
             isOpen={isOpen}

@@ -1,3 +1,6 @@
+@use '../../../styles/media' as *;
+
+
 .button {
   text-wrap: nowrap;
 
@@ -80,12 +83,21 @@
   &-header {
     font-family: var(--font-family-inter), sans-serif;
     font-weight: 600;
+    font-size: 16px;
     text-transform: uppercase;
     line-height: 150%;
 
     border-radius: var(--border-radius-m);
-    padding-block: 20px;
-    padding-inline: 28px;
+    padding-block: 16px;
+    padding-inline: 24px;
+
+    @include laptop-s {
+      padding-block: 11px;
+      padding-inline: 17px;
+      font-size: 11px;
+      border-radius: 11px;
+
+    }
   }
 
   &-hero {
